@@ -23,3 +23,9 @@ transform AMD/CommonJS/Module to CMD
     * export default: `module.exports=something;`
   * for ES6 it will transform to ES5
   * otherwise it will return your source code
+  
+## INSTALL
+
+```
+npm install seatransform
+```
