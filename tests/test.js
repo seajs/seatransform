@@ -37,7 +37,7 @@ describe('module2cmd', function() {
   it('export default', function() {
     var s = 'export default a'
     var res = seatransform.transform(s)
-    expect(res).to.eql('define(function(require, exports, module) {module.exports=a});')
+    expect(res).to.eql('define(function(require, exports, module) {exports.default=a});')
   })
   it('export var', function() {
     var s = 'export var a'
@@ -57,7 +57,7 @@ describe('module2cmd', function() {
   it('import from', function() {
     var s = 'import a from "a"'
     var res = seatransform.transform(s)
-    expect(res).to.eql('define(function(require, exports, module) {var a;!function(){var _0_=require("a");a=_0_.a;}();});')
+    expect(res).to.eql('define(function(require, exports, module) {var a=require("a");});')
   })
   it('import as from', function() {
     var s = 'import {a as b, c} from "a"'

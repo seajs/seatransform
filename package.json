@@ -1,6 +1,6 @@
 {
   "name": "seatransform",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "maintainers": [
     {
       "name": "army8735",
@@ -23,7 +23,7 @@
     }
   },
   "dependencies": {
-    "ranma": "^0.2.0"
+    "ranma": "^0.3.0"
   },
   "repository": {
     "type": "git",
