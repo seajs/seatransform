@@ -23,7 +23,7 @@
     }
   },
   "dependencies": {
-    "ranma": "^0.3.0"
+    "ranma": "^0.4.0"
   },
   "repository": {
     "type": "git",
