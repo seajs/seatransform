@@ -57,7 +57,7 @@ describe('module2cmd', function() {
   it('import id from', function() {
     var s = 'import a from "a"'
     var res = seatransform.transform(s)
-    expect(res).to.eql('define(function(require, exports, module) {var a=function(){var _0_=require("a");return _0_.hasOwnProperty("default")?_0_.default:_0_}()});')
+    expect(res).to.eql('define(function(require, exports, module) {var a=function(){var _0_=require("a");return _0_.hasOwnProperty("a")?_0_.a:_0_.hasOwnProperty("default")?_0_.default:_0_}()});')
   })
   it('import ids from', function() {
     var s = 'import a,b from "a"'
